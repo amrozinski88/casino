@@ -8,8 +8,8 @@ app.use(express.json());
  
 
 module.exports = function(app) {
-  app.get("/gemGame",function(req,res){
-    res.sendFile(path.join(__dirname,"gemGuessGame.html"))
+  app.get("/chipGame",function(req,res){
+    res.sendFile(path.join(__dirname,"chipGuessGame.html"))
   });
   
   app.get("/wordGame",function(req,res){
