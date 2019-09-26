@@ -11,10 +11,10 @@ var losses = 0;
 
 
 // ******************Stones***************
-var thunderStone = Math.floor(Math.random() * 10) + 1;
-var fireStone = Math.floor(Math.random() * 10) + 1;
-var leafStone = Math.floor(Math.random() * 10) + 1;
-var moonStone = Math.floor(Math.random() * 10) + 1;
+var chipOne = Math.floor(Math.random() * 10) + 1;
+var chipTwo = Math.floor(Math.random() * 10) + 1;
+var chipThree = Math.floor(Math.random() * 10) + 1;
+var chipFour = Math.floor(Math.random() * 10) + 1;
 
 
 // *********DOM Manipulations************
@@ -32,42 +32,44 @@ $("#targetNumber").text("Goal: " + targetNumber);
 
 counter = 0;
 
-thunderStone = Math.floor(Math.random() * 10) + 1;
-fireStone = Math.floor(Math.random() * 10) + 1;
-leafStone = Math.floor(Math.random() * 10) + 1;
-moonStone = Math.floor(Math.random() * 10) + 1;
+var chipOne = Math.floor(Math.random() * 10) + 1;
+var chipTwo = Math.floor(Math.random() * 10) + 1;
+var chipThree = Math.floor(Math.random() * 10) + 1;
+var chipFour = Math.floor(Math.random() * 10) + 1;
+
+
 }
 
 // ***************** Click Functions ********************
-$("#thunder").on("click", function(){
-    counter += thunderStone;
-    var stoneValue = ($(this).attr("data-stonevalue"));
+$("#chipOne").on("click", function(){
+    counter += chipOne;
+    var stoneValue = ($(this).attr("data-chipvalue"));
     stoneValue = parseInt(stoneValue);
     console.log(counter);
 });
 
-$("#fire").on("click", function(){
-    counter += fireStone;
-    var stoneValue = ($(this).attr("data-stonevalue"));
+$("#chipTwo").on("click", function(){
+    counter += chipTwo;
+    var stoneValue = ($(this).attr("data-chipvalue"));
     stoneValue = parseInt(stoneValue);
     console.log(counter);
 });
 
-$("#leaf").on("click", function(){
-    counter += leafStone;
-    var stoneValue = ($(this).attr("data-stonevalue"));
+$("#chipThree").on("click", function(){
+    counter += chipThree;
+    var stoneValue = ($(this).attr("data-chipvalue"));
     stoneValue = parseInt(stoneValue);
     console.log(counter);
 });
 
-$("#moon").on("click", function(){
-    counter += moonStone;
-    var stoneValue = ($(this).attr("data-stonevalue"));
+$("#chipFour").on("click", function(){
+    counter += chipFour;
+    var stoneValue = ($(this).attr("data-chipvalue"));
     stoneValue = parseInt(stoneValue);
     console.log(counter);
 });
 
-$("#stones").on("click", function(){
+$("#chips").on("click", function(){
     $("#counter").text("Counter: " + counter);
 
     // ************************ Wins *******************
