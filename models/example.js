@@ -1,7 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
-  var Example = sequelize.define("Example", {
-    text: DataTypes.STRING,
-    description: DataTypes.TEXT
-  });
-  return Example;
+  
+var casinoDB = sequelize.define("stock", {
+  item_name: DataTypes.STRING,
+  item_description: DataTypes.STRING
+});
+  return casinoDB;
 };
+
+
+
