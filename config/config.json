@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "TrY5290!",
+    "password": null,
     "database": "excalibar",
     "host": "localhost",
     "dialect": "mysql"
