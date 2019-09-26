@@ -1,5 +1,14 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+DROP DATABASE IF EXISTS excalibar;
 
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+CREATE DATABASE excalibar;
+
+USE excalibar;
+
+create table stock 
+(
+id INT AUTO_INCREMENT NOT NULL,
+item_name VARCHAR (225) NOT NULL,
+quantity INT NOT NULL
+);
+
+
