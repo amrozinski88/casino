@@ -1,4 +1,26 @@
 // welcome to slots message
+console.log(`i worked`)
+// 3 slot screen items
+let slotOne = 0;
+let slotTwo = 0;
+let slotThree = 0;
+
+$("#spinBtn").on("click",()=>{
+    slotOne = Math.floor(Math.random()*3)+1;
+    slotTwo = Math.floor(Math.random()*3)+1;
+    slotThree = Math.floor(Math.random()*3)+1;
+    if(slotOne === slotThree && slotOne === slotTwo){
+        console.log(`you win!`);
+        console.log(slotOne,slotTwo,slotThree)
+    } else{
+        console.log(`thanks for your money`);
+        console.log(slotOne,slotTwo,slotThree)
+    };
+
+});
+
+
+
 // explain rules and cost of game
 // user will click spin 
     // spin will run 
@@ -9,20 +31,6 @@
 // comparing logic---------------
 // generate 3 arrays 
 // [0,1,2]
-// [1,2,0]
-// [2,0,1]
-// 1 coin payout line  middle row ----
-// [0,1,2]
-// [0,0,0]
-// [2,1,0]
-// 2 coin payout line diagonal bottum/////
-// [0,1,1]
-// [0,1,0]
-// [1,1,1]
-// 3 coin payout line --- + ///
-// [0,1,1]
-// [1,1,1]
-// [1,0,2]
 
 // start of game
 
