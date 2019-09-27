@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chip Guess Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/styles/style.css">
+
 </head>
+
 <body>
 
-    <div id="chips">
-        <button id="chipOne"></button>
-        <button id="chipTwo"></button>
-        <button id="chipThree"></button>
-        <button id="chipFour"></button>
+    <div class="container">
+        <div id="chips">
+            <button id="chipOne"><img src="/public/styles/pictures/blackPokerChip.jpg" alt=""></button>
+            <button id="chipTwo"><img src="/public/styles/pictures/bluePokerChip.jpg" alt=""></button>
+            <button id="chipThree"><img src="/public/styles/pictures/greenPokerChip.jpg" alt=""></button>
+            <button id="chipFour"><img src="/public/styles/pictures/redPokerChip.jpg" alt=""></button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div id="targetNumber"></div>
+        <div id="counter"></div>
+        <div id="wins"></div>
+        <div id="losses"></div>
     </div>
 
 
-    <div id="targetNumber"></div>
-    <div id="counter"></div>
-    <div id="wins"></div>
-    <div id="losses"></div>
-    
-
-
-
-
-    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="/public/js/games/chipGuessGame.js"></script>
 </body>
+
 </html>
