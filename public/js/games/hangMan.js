@@ -1,7 +1,7 @@
 // variables used for gameplay
-var words = ["casino", "Vegas", "gamble", "slots", "lucky"];
-var guesses = 7;
-document.getElementById("guessesLeft").innerHTML ="Guesses you have left: " + guesses;
+var words = ["casino", "Vegas", "gamble", "slots", "luck"];
+var guesses = 5;
+document.getElementById("guessesLeft").innerHTML = "Guesses you have left: " + guesses;
 var wins = 0
 // randonmly select a word
 var challenge = words[Math.floor(Math.random() * words.length)];
@@ -49,23 +49,24 @@ document.onkeyup = function (event) {
  document.getElementById("hangman").innerHTML += filledSpaces;
  document.getElementById("hangman").innerHTML = filledSpaces;
 
- if (filledSpaces == "rattlesnake" || filledSpaces == "saloon" || filledSpaces == "revolver") {
+ if (filledSpaces == "casino" || filledSpaces == "Vegas" || filledSpaces == "gamble" || filledSpaces == "slots" || filledSpaces == "luck") {
    alert("Winner winner!")
  }
- 
-
- // if you complete the game and win...
-
-
 
  // hints
 
- if (challenge == "rattlesnake") {
-  document.getElementById("hints").innerHTML = ("HINT: Their bite is deadly!")
+ if (challenge == "casino") {
+  document.getElementById("hints").innerHTML = ("HINT: Where you come to test your luck!")
 }
-if (challenge == "saloon") {
-  document.getElementById("hints").innerHTML = ("HINT: You come here to wet your whistle")
+if (challenge == "Vegas") {
+  document.getElementById("hints").innerHTML = ("HINT: Also known as Sin City")
 }
-if (challenge == "revolver") {
-  document.getElementById("hints").innerHTML = ("HINT: An outlaws iron")
+if (challenge == "gamble") {
+  document.getElementById("hints").innerHTML = ("HINT: You win some and you lose some")
+}
+if (challenge == "slots") {
+  document.getElementById("hints").innerHTML = ("HINT: Line up 3 to win big!")
+}
+if (challenge == "luck") {
+  document.getElementById("hints").innerHTML = ("HINT: Ypu need a bit of this if you want to win")
 }
