@@ -14,7 +14,8 @@ if (config.use_env_variable) {
   var sequelize = new Sequelize(
     config.database,
     config.username,
-    config.password,
+    // config.password,
+    process.env.SEQUEL_PW,
     config
   );
 }
@@ -36,7 +37,6 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
-
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
