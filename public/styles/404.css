@@ -1,0 +1,38 @@
+/* 404 PAGE STYLE */
+#background-404{
+    background-image: url("pictures/htmlPics/background404.png");
+    background-color: #000000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-position-y: 100px;
+    background-position-x: 100px; */
+    text-align: -webkit-center;
+}
+.page-not-found{
+    color:white;
+    text-align:center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+}
+.page-not-found-header{
+    color:white;
+    text-align:center;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 150px;
+    margin-top: 140px;
+    font-weight: 200; 
+    margin-bottom: 10px;  
+}
+#return-btn{
+    background-color: rgb(238, 40, 40);
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
+}
+#image-404{
+    margin-bottom: 30px;
+    width:100px; 
+    height: 100px; 
+}
