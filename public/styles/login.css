@@ -1,0 +1,50 @@
+#background-login{
+    background-image: url("pictures/htmlPics/background-login.jpg");
+}
+.welcome{
+    color: #ffffff;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 50px;
+}
+#container-logs{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#login-btn,
+#signup-btn{
+    width: 200px;
+    border-radius: 20px;
+    margin: 30px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(58, 58, 58);
+    background-color: rgb(240, 240, 240, 0.5);
+    border-style: none;
+}
+.jumbotron{
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240, 0.4);
+    margin-bottom: 30px;
+    padding: 20px 5px;
+}
+#input-login,
+#input-signup{
+    background-color: rgb(240, 240, 240, 0.4);
+    border-style: none;
+    color: #505050;
+}
+#input-login{
+    width: 300px;
+}
+#log-submit{
+    background-color: rgba(199, 199, 199, 0.6);
+    border-style: none;
+    width: 100px;
+    margin-top: 10px;
+    color: #ffffff;
+}
