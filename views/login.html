@@ -8,8 +8,8 @@
     <title>Casino</title>
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- GOOGLE FONT FAMILY -->
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP LINK-->
@@ -19,7 +19,8 @@
     <link rel="stylesheet" type="text/css" href="../public/styles/login.css">
 </head>
 
-<body id="background-login">
+<body> <!-- ATM removed  body id -->
+    
     <h1 class="welcome">Welcome to Spades!</h1>
 
     <!-- Buttons Div -->
@@ -35,73 +36,73 @@
         <div class="container">
             <form>
                 <div class="form-group">
-                        <label for="input-username">UserName</label>
-                        <input type="password" class="form-control" id="input-login" placeholder="Username" required>
-                    </div>
+                    <label for="input-username">UserName</label>
+                    <input type="password" class="form-control" id="input-login" placeholder="Username" required>
+                </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="input-login" placeholder="Password" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="log-submit">Submit</button>
+                <button type="submit" class="btn submitFormBtn" id="log-submit">Submit</button>
             </form>
         </div>
     </div>
 
 
-     <!-- Container Sign Up -->
+    <!-- Container Sign Up -->
 
-     <div class="jumbotron jumbotron-fluid" id="hidden2">
-            <div class="container">
-                <form>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault01">First name</label>
-                            <input type="text" class="form-control" id="input-signup" placeholder="Name"
-                                value="Name" required>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="validationDefault02">Last name</label>
-                            <input type="text" class="form-control" id="input-signup" placeholder="Last name"
-                                value="Last Name" required>
-                        </div>
+    <div class="jumbotron jumbotron-fluid" id="hidden2">
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="signupFirstNameInput">First name</label>
+                        <input type="text" class="form-control input-signup"  id="signupFirstNameInput" placeholder="Name"
+                            required>
                     </div>
-                    <div class="form-group">
-                            <label for="input-username">UserName</label>
-                            <input type="password" class="form-control" id="input-signup" placeholder="Username">
-                        </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="input-signup" placeholder="Password">
+                    <div class="col-md-6 mb-3">
+                        <label for="signupLastNameInput">Last name</label>
+                        <input type="text" class="form-control input-signup" id="signupLastNameInput" placeholder="Last name"
+                            required>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword2">Verify your Password</label>
-                        <input type="password" class="form-control" id="input-login" placeholder="Re-enter Password">
-                    </div>
-                    <button type="submit" class="btn btn-primary" id="log-submit">Submit</button>
-                </form>
-            </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupUsernameInput">UserName</label>
+                    <input type="text" class="form-control input-signup" id="signupUsernameInput" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="signupPasswordInput">Password</label>
+                    <input type="password" class="form-control input-signup" id="signupPasswordInput" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPasswordConfirmInput">Verify your Password</label>
+                    <input type="password" class="form-control input-signup" id="signupPasswordConfirmInput" placeholder="Re-enter Password" required>
+                </div>
+                <button type="submit" class="btn submitFormBtn" id="signupSubmitBtn">Submit</button>
+            </form>
         </div>
-    
+    </div>
+
 
     <!-- maybe a footer?? -->
-    
-<script type="text/javascript">
 
-    $("#hidden1").hide();
-    $("#hidden2").hide();
+    <script type="text/javascript">
 
-    $("#login-btn").on("click", function(){
-        $("#hidden1").show();
-        $("#hidden2").hide();
-    });
-
-    $("#signup-btn").on("click", function(){
-        $("#hidden2").show();
         $("#hidden1").hide();
-    });
-</script>
+        $("#hidden2").hide();
 
+        $("#login-btn").on("click", function () {
+            $("#hidden1").show();
+            $("#hidden2").hide();
+        });
+
+        $("#signup-btn").on("click", function () {
+            $("#hidden2").show();
+            $("#hidden1").hide();
+        });
+    </script>
+    <script src="../public/js/login.js"></script>
 </body>
 
 </html>
