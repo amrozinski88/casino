@@ -1,11 +1,14 @@
-#background-login{
+body {
     background-image: url("pictures/htmlPics/background-login.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 .welcome{
     color: #ffffff;
     font-family: 'Oxygen', sans-serif;
     text-align: center;
-    margin-top: 80px;
+    padding-top: 80px;
     font-size: 50px;
 }
 #container-logs{
@@ -33,15 +36,16 @@
     padding: 20px 5px;
 }
 #input-login,
-#input-signup{
+.input-signup{
     background-color: rgb(240, 240, 240, 0.4);
     border-style: none;
     color: #505050;
+    
 }
 #input-login{
     width: 300px;
 }
-#log-submit{
+.submitFormBtn{
     background-color: rgba(199, 199, 199, 0.6);
     border-style: none;
     width: 100px;
