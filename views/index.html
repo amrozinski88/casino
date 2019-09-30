@@ -22,105 +22,198 @@
     <!-- GOOGLE FONT FAMILY -->
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300&display=swap" rel="stylesheet">
     <!-- CSS Linked -->
-    <link rel="stylesheet" type="text/css" href="/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="../public/styles/index.css">
     <!-- ICONS -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body id="background-home">
 
-    <nav class="navbar navbar-dark bg-black" id="nav-bar">
-
-        <h3 class="bounceInLeft">CASINO</h3>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span</span> <!-- Grab the ID "user-chips" to display coins gained by the user and replace the "0" -->
-            <button id="chip-btn">Chips: <span id="user-chips">0 </span><i style="font-size:20px; color:yellow"
-                    class="fas">&#xf51e;</i></button>
-    </nav>
-
     <div class="row">
-        <div class="col-3" id="home-col">
-
+        <div class="col-2" id="home-col">
+            <h1 id="spade"> &spades; </h1>
+            <!-- <div class="jumbotron" id ="jumbotron"> -->
+                <h4>Welcome!</h4>
+                <h4 id="user-name">User Name Id</h4>
+            <!-- </div> -->
             <br>
             <br>
-            <h4>Welcome!</h4>
-            <h4 id="user-name">User Name Id</h4>
-            <hr class="separator-left">
-            <br>
-            <img id="gift" src="styles/pictures/htmlPics/giftjpg.jpg">
+            <div class="jumbotron" id ="jumbotron">
+            <img id="gift" src="../public/styles/pictures/htmlPics/giftjpg.jpg">
             <!-- git picture -->
             <button type="button" class="btn btn-outline-danger" id="log-btn">Rewards</button>
-
-
+        </div>
+            <br>
+            <div class="jumbotron" id ="jumbotron">
+            <button id="chip-btn"><i style='font-size:16px' class='fas'>&#xf015;</i> Home</button>
+            <br>
             <hr class="separator-left">
-
-            <button id="chip-btn">Home</button>
             <br>
+            <button id="banking-btn"><i style='font-size:16px' class='fas'>&#xf09d;</i> Bank </button>
             <br>
+            <hr class="separator-left">
             <br>
-            <button id="banking-btn">Banking</button>
-            <br>
-            <br>
-            <br>
-            <button id="blog-btn">Blog</button>
+            <button id="blog-btn"><i style='font-size:16px' class='fas'>&#xf044;</i> Blog</button>
+        </div>
 
 
 
         </div>
 
         <!-- BODY OF THE HOME PAGE -->
-        <div class="col-9">
+        <div class="col-10">
+
+                <nav class="navbar navbar-dark bg-black" id="nav-bar">
+                        <h3 class="bounceInLeft"></h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span</span>
+                            <button id="chip-btn">Chips: <span id="user-chips">0 </span><i style="font-size:20px; color:yellow"
+                                    class="fas">&#xf51e;</i></button>
+                    </nav>
+
             <!-- CAROUSEL  -->
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 100%; height: 350px; margin: 0 auto">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="2000">
-                        <img src="/styles/pictures/htmlPics/background2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item active" data-interval="3000">
+                        <img src="../public/styles/pictures/htmlPics/carousel1.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 350px" >
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>FRIDAY NIGHT!</h5>
+                          </div>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
-                        <img src="/styles/pictures/htmlPics/background4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="../public/styles/pictures/htmlPics/carousel2.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 350px" > 
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LOOKING FOR A GREAT DINNER?</h5>
+                            <p></p>
+                          </div>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
-                        <img src="/styles/pictures/htmlPics/background404.png" class="d-block w-100" alt="...">
+                    <div class="carousel-item" data-interval="3000">
+                        <img src="../public/styles/pictures/htmlPics/carousel3.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 350px" >
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NOW OPEN!</h5>
+                          </div>
                     </div>
                 </div>
             </div>
+            <br>
 
             <!-- Container for Game -->
-            <div class="container">
+            
+            <div class="container" id="game">
                 <div class="row">
-                    <div class="col-sm">
-                        One of three columns
+                    <div class="col-sm" id="game1">
+                       <img src="../public/styles/pictures/htmlPics/Baccarat.png" class="games-pics">
+                       <hr>
                     </div>
-                    <div class="col-sm">
-                        One of three columns
+                    <div class="col-sm" id="game2">
+                            <img src="../public/styles/pictures/htmlPics/BlackJack.png" class="games-pics">
                     </div>
-                    <div class="col-sm">
-                        One of three columns
+                    <div class="col-sm" id="game3">
+                            <img src="../public/styles/pictures/htmlPics/Caribbean.png" class="games-pics">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm">
-                        One of three columns
+                    <div class="col-sm" id="game4">
+                            <img src="../public/styles/pictures/htmlPics/Crazy4Poker.png" class="games-pics">
                     </div>
-                    <div class="col-sm">
-                        One of three columns
+                    <div class="col-sm" id="game5">
+                            <img src="../public/styles/pictures/htmlPics/Money-Wheel.png" class="games-pics">
                     </div>
-                    <div class="col-sm">
-                        One of three columns
+                    <div class="col-sm" id="game6">
+                            <img src="../public/styles/pictures/htmlPics/ThreeCardPoker.png" class="games-pics">
                     </div>
                 </div>
+
+                <div class="row">
+                        <div class="col-sm" id="game4">
+                                <img src="../public/styles/pictures/htmlPics/TipsFAQs.png" class="games-pics">
+                        </div>
+                        <div class="col-sm" id="game5">
+                                <img src="../public/styles/pictures/htmlPics/paigow.png" class="games-pics">
+                        </div>
+                        <div class="col-sm" id="game6">
+                                <img src="../public/styles/pictures/htmlPics/Spanish21.png" class="games-pics">
+                        </div>
+                    </div>
 
             </div>
-
+            
             <!-- Footer -->
             <div class="row">
-                <div class="col-lg-12">
-                    <footer class="footer">Copyright <b>©</b></footer>
+                    <div class="col-lg-12">
+                   <footer class="footer">
+                        <div class="container" id="footer-content">
+                                <div class="row">
+                                    <div class="col-sm" id="content1">
+                                       <ul>
+                                           <li id="main-li">About</li>
+                                           <li>Careers</li>
+                                           <li>Help</li>
+                                           <li>FAQ</li>
+                                           <li>Affiliates</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm" id="content2">
+                                        <ul>
+                                           <li id="main-li">Games</li>
+                                           <li>Slots</li>
+                                           <li>BlackJack</li>
+                                           <li>Flip Coin</li>
+                                           <li>Hang Man</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm" id="content3">
+                                        <ul>
+                                           <li id="main-li">Security & privacy</li>
+                                           <li>Careers</li>
+                                           <li>Help</li>
+                                           <li>FAQ</li>
+                                           <li>Affiliates</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr id="footer-hr">
+                                <div class="row">
+                                        <div class="col-sm" id="content1">
+                                           <ul>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm" id="content2">
+                                            <ul>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
+                                               <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
+                                               <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
+   
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm" id="content3">
+                                            <ul>
+                                               <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
+                                               <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <hr id="footer-hr">                             
+            
+                
+                            </div>
+                    
+                    
+                    Copyright <b>©</b></footer>
+                    </div>
                 </div>
-            </div>
 
         </div>
     </div>
