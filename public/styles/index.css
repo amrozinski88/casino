@@ -1,68 +1,61 @@
 /* HOME PAGE STYLE */
 #background-home{
-    background-color: #252525;
-    /* background-image: url("pics/background1.png"); */
+    background: rgba(8, 8, 8, 0.8);
+    background-image: url("../styles/pictures/htmlPics/home.png");
+    background-repeat: repeat;
 }
 #nav-bar{
-    background-color:#0f0f0f;
+    background-color: rgb(0, 0, 0);
     height: 70px;
-    box-shadow:  0 4px 48px 0 rgba(78, 78, 78, 0.2), 0 6px 40px 0 rgba(54, 54, 54, 0.19);
 }
 #chip-btn,
 #banking-btn,
 #blog-btn{
+    margin-top: 10px;
     background-color: transparent;
-    color: rgb(189, 0, 0);
+    color:  rgb(226, 219, 0);
     border-style: none;
+    text-align: right;
+    font-size: 12px;
 }
 footer {
     margin-top: 20px;
     color: #ffffff;
     text-align: center;
-    background: #000000;
+    background: rgba(8, 8, 8, 0.8);
     padding: 20px;
     float: none;
     position: static;
-    margin-left: -16px;
 }
 .fas{
     margin-left: 10px;
 }
 #separator{
     margin: 0 20px;
-    color: rgb(189, 0, 0);
+    color:  rgb(160, 42, 42);
 }
 #log-btn{
     width: 90px;
     height: 35px;
+    color:  rgb(226, 219, 0);
+    border-color: rgb(226, 219, 0);
+    margin: 10px 0 20px 0;
+    background-color: transparent;
+    outline:0;
 }
-.bounceInLeft{
-    color: rgb(119, 3, 3);
-    position: relative;
-    -webkit-animation-name: example; 
-    -webkit-animation-duration: 4s; 
-    -webkit-animation-delay: 1s;
-     -webkit-animation-iteration-count: 100;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 2s;
+#log-btn:focus {
+    outline:0;
 }
-@-webkit-keyframes example {
-    0%   {left:0px; top:0px;}
-    40%  {left:200px; top:0px;}
-  }
-
 #carouselExampleSlidesOnly{
-    margin: 20px;
-    min-height: calc(100vh - 70px);
-    height: 200px;
+
 }
 #home-col{
-    background-color: #0f0f0f;
+    background-color: rgb(0, 0, 0);
     color:white;
 }
-.col-3{
+.col-2{
     text-align: center;
+    padding-top: 60px;
 }
 .separator-left{
     width:80%;
@@ -77,5 +70,71 @@ footer {
 }
 #home-icon{
     background-color: yellow;
+}
+.col-10{
+    padding: 0 0;
+}
+h4{
+    color:  rgb(226, 219, 0);
+}
+.carousel-caption{
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: -30px;
+}
+button:focus {
+    outline:0;
+}
+#spade{
+    color: yellow;
+    font-size: 110px;
+}
+#game{
+    margin: 60px;
+    min-height: calc(100vh - 70px)                                                                
+}
+h5{
+    font-size: 20px;
+}
+
+#game1,
+#game2,
+#game3,
+#game4,
+#game5,
+#game6{
+    text-align: center;
+    display: inline-block;
+    height: 200px;
+    width: 100px;
+    margin-bottom: 150px;
+}
+li,
+#content1,
+#content2,
+#content3{
+    text-align: left;
+    color: rgb(84, 84, 84);
+    font-size: 18px;
+    list-style-type: none;
+}
+#main-li{
+    color:white;
+    margin: 20px 0 10px 0;
+}
+#footer-hr{
+    margin: 30px 0;
+    background-color: rgb(94, 94, 94);
+}
+#jumbotron{
+    margin: 0 20px;
+    background-color: rgba(34, 34, 34, 0.2);
+}
+.games-pics{
+    width:250px;
+    height: 250px;
+}
+#cards{
+    margin-bottom: 10px;
 }
 
