@@ -35,14 +35,14 @@ body {
     margin-bottom: 30px;
     padding: 20px 5px;
 }
-#input-login,
+.input-login,
 .input-signup{
     background-color: rgb(240, 240, 240, 0.4);
     border-style: none;
     color: #505050;
     
 }
-#input-login{
+.input-login{
     width: 300px;
 }
 .submitFormBtn{

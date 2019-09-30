@@ -5,11 +5,23 @@ const bcrypt = require("bcryptjs");
 module.exports = app => {
     // generating salt for password encryption.
     const salt = bcrypt.genSaltSync(10);
-    //route to log in user and return user ID.
-    app.get("/login", (req, res) => {
-
+    //route to log in user and return userinfo.
+    app.post("/api/login", (req, res) => {
+        const { username, password } = req.body
+        if (username === "" || !username || password === "" || !password) {
+            res.status(400).json("Please enter a valid username and password")
+        }
+        res.json({username,password})
+        db.User.findOne({
+            where:{
+                username: username
+            }
+        }).then(userObject=>{
+            console.log(userObject)
+            res.send(json())
+        });
     });
-
+    
 
     // route to add new user to database.
     app.post("/api/signup", (req, res) => {
@@ -17,7 +29,7 @@ module.exports = app => {
         const { name, username, password } = req.body;
         // validating that username and password exists if not sends error message.
         if (username === "" || !username || password === "" || !password || name === "" || !name) {
-            res.status(400).json("Please enter valid username name and password")
+            res.status(400).json("Please enter valid name, username, and password")
         }
         // if they exist password is turned into hash.
         const hash = bcrypt.hashSync(password, salt);
@@ -26,8 +38,7 @@ module.exports = app => {
         }
 
         ).catch(error => {
-            console.log(error)
-            res.status(500).json("error saving user to db")
+            res.status(500).json({error:"error saving user to db"})
         })
 
     })
