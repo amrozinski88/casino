@@ -42,4 +42,6 @@ module.exports = app => {
         })
 
     })
+
+    // new route for all users 
 }
