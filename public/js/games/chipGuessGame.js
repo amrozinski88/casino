@@ -1,5 +1,4 @@
-var User = require("../models");
-
+console.log('i works')
 
 // ***********PSUEDOCODE************
 //*************Variables*************
