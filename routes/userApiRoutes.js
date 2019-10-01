@@ -43,6 +43,12 @@ module.exports = app => {
 
     });
 
+    app.get("/api/User", function(req, res) {
+        db.User.findAll({}).then(function(dbUser) {
+          res.json(dbUser);
+        });
+      });
+
     app.put("/api/:Users/coins", function (req, res) {
         db.User.update(
             req.body,
