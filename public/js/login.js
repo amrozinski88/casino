@@ -1,8 +1,8 @@
 $("#loginSubmitBtn").on("click", (event) => {
     event.preventDefault();
     const loginUser = $("#loginUsernameInput").val().trim();
-    const loginPassord = $("#loginPasswordInput").val().trim();
-    if (loginUser === "" || loginPassord === "") {
+    const loginPassword = $("#loginPasswordInput").val().trim();
+    if (loginUser === "" || loginPassword === "") {
         alert("Please enter a valid username and password")
     }
     else {
@@ -13,13 +13,25 @@ $("#loginSubmitBtn").on("click", (event) => {
             },
             body: JSON.stringify({
                 username: loginUser,
-                password: loginPassord
+                password: loginPassword
             })
-        }).then((result) => {
-            console.log("login succesful")
-        }).catch(error => {
-            console.log(error)
-        });
+        }).then(response => response.json())
+            .then(data => {
+                // setting my values to storage
+                sessionStorage.clear();
+                sessionStorage.setItem("name", data.name);
+                sessionStorage.setItem("coins", data.coins);
+                sessionStorage.setItem("username", data.username);
+                // making redirect open in same tab
+                window.open("/index", "_self");
+
+            }
+
+            )
+
+            .catch(error => {
+                console.log(error.body.error)
+            })
     };
 })
 
@@ -49,10 +61,22 @@ $("#signupSubmitBtn").on("click", (event) => {
                 password
             })
 
-        }).then(response => {
-            console.log(response)
-        }).catch(error=>{
-            console.log(error.body.error)
-        })
+        }).then(response => response.json())
+            .then(data => {
+                // setting my values to storage
+                sessionStorage.clear();
+                sessionStorage.setItem("name", data.name);
+                sessionStorage.setItem("coins", data.coins);
+                sessionStorage.setItem("username", data.username);
+                // making redirect open in same tab
+                window.open("/index", "_self");
+
+            }
+
+            )
+
+            .catch(error => {
+                console.log(error.body.error)
+            })
     }
 });

@@ -1,5 +1,4 @@
 const db = require("../models");
-console.log(db)
 // requiring bcrypt package to hide user passwords.
 const bcrypt = require("bcryptjs");
 module.exports = app => {
@@ -11,17 +10,23 @@ module.exports = app => {
         if (username === "" || !username || password === "" || !password) {
             res.status(400).json("Please enter a valid username and password")
         }
-        res.json({username,password})
         db.User.findOne({
-            where:{
+            where: {
                 username: username
             }
-        }).then(userObject=>{
-            console.log(userObject)
-            res.send(json())
+        }).then(userObject => {
+            const { name, username, coins } = userObject;
+            res.json({
+                name,
+                username,
+                coins
+            });
+        }).catch(error => {
+            res.json(error)
         });
+
     });
-    
+
 
     // route to add new user to database.
     app.post("/api/signup", (req, res) => {
@@ -38,16 +43,16 @@ module.exports = app => {
         }
 
         ).catch(error => {
-            res.status(500).json({error:"error saving user to db"})
+            res.status(500).json({ error: "error saving user to db" })
         })
 
     });
 
-    app.get("/api/User", function(req, res) {
-        db.User.findAll({}).then(function(dbUser) {
-          res.json(dbUser);
+    app.get("/api/User", function (req, res) {
+        db.User.findAll({}).then(function (dbUser) {
+            res.json(dbUser);
         });
-      });
+    });
 
     app.put("/api/:Users/coins", function (req, res) {
         db.User.update(
