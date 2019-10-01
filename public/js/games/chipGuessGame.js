@@ -1,3 +1,6 @@
+var User = require("../models");
+
+
 // ***********PSUEDOCODE************
 //*************Variables*************
 var targetNumber = [Math.floor(Math.random() * 101)+ 19];
@@ -26,6 +29,30 @@ $("#counter").text("Counter: " + counter);
 
 
 // *************Functions***************
+
+function updateCoinsWin(coins) {
+    $.ajax({
+      method: "PUT",
+      url: "/api/User",
+      data: coins
+    })
+      .then(function() {
+        window.location.href = User;
+      });
+  };
+
+// update coins template
+function updateCoinsLose(coins) {
+    $.ajax({
+      method: "PUT",
+      url: "/api/User",
+      data: coins
+    })
+      .then(function() {
+        window.location.href = User;
+      });
+  };
+
 function startGame(){
 targetNumber = [Math.floor(Math.random() * 101)+ 19];
 $("#targetNumber").text("Goal: " + targetNumber);
