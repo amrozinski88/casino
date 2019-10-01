@@ -23,11 +23,11 @@ module.exports = function(app) {
   });
   
   app.get("/wordGame",function(req,res){
-    res.sendFile(path.resolve(__dirname,"../views/games/wordGuessGame.html"))
+    res.sendFile(path.resolve(__dirname,"../views/games/hangmanGame.html"))
   });
   
   app.get("/slotsGame",function(req,res){
-    res.sendFile(path.resolve(__dirname,"../views/games/slotsGame.html"))
+    res.sendFile(path.resolve(__dirname,"../views/games/slots.html"))
   });
   
   app.get("/blackJackGame",function(req,res){

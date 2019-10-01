@@ -41,7 +41,17 @@ module.exports = app => {
             res.status(500).json({error:"error saving user to db"})
         })
 
-    })
+    });
 
-    // new route for all users 
+    app.put("/api/:Users/coins", function (req, res) {
+        db.User.update(
+            req.body,
+            {
+                where: {
+                    id: req.body.coins
+                }
+            }).then(function (dbPost) {
+                res.json(dbPost);
+            });
+    });
 }
