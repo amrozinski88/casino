@@ -3,6 +3,12 @@ var $exampleText = $("#example-text");
 var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
+const name = sessionStorage.getItem("name");
+const coins = sessionStorage.getItem("coins");
+
+$("#user-name").text(name)
+
+$("#user-chips").text(coins)
 
 // The API object contains methods for each kind of request we'll make
 var API = {
