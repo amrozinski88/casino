@@ -1,8 +1,6 @@
-// GLOBAL VARIABLES (accessible by all functions)
-// ==================================================================================================
 
-// Array of Word Options (all lowercase)
-var wordsList = ['vegas', 'casino', 'lucky', 'poker', 'winner', 'blackjack', 'slots', 'seven', 'bust', 'loser', 'lights'];
+var wordsList = ['vegas', 'casino', 'lucky', 'slots', 'chips', 'cards', 'desert', 'bust', 'winner'];
+
 // Solution will be held here.
 var chosenWord = "";
 // This will break the solution into individual letters to be stored in array.
@@ -19,12 +17,7 @@ var winCounter = 0;
 var lossCounter = 0;
 var numGuesses = 9;
 
-// FUNCTIONS (These are bits of code that we will call upon to run when needed)
-// =========================================================================================
 
-// startGame()
-// Its how we we will start and restart the game.
-// (Note: It's not being run here. It's just being made for future use.)
 function startGame() {
   // Reset the guesses back to 0.
   numGuesses = 9;
