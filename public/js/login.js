@@ -23,8 +23,7 @@ $("#loginSubmitBtn").on("click", (event) => {
                 sessionStorage.setItem("coins", data.coins);
                 sessionStorage.setItem("username", data.username);
                 // making redirect open in same tab
-                window.open("/index", "_self");
-
+                document.location.replace("/index");
             }
 
             )

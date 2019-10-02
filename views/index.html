@@ -26,7 +26,12 @@
     <!-- ICONS -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script>
+        // not sure if best way to re-route but it works
+    if(!sessionStorage.name){
+        document.location.replace("/")
+    }
+    </script>
 </head>
 
 <body id="background-home">
@@ -226,3 +231,8 @@
 </body>
 
 </html>
+
+
+<!-- logout button -->
+<!-- sessionstorage.clear()
+document.location.replace("/") -->
