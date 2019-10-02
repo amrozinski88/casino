@@ -17,13 +17,18 @@ $("#loginSubmitBtn").on("click", (event) => {
             })
         }).then(response => response.json())
             .then(data => {
-                // setting my values to storage
-                sessionStorage.clear();
-                sessionStorage.setItem("name", data.name);
-                sessionStorage.setItem("coins", data.coins);
-                sessionStorage.setItem("username", data.username);
-                // making redirect open in same tab
-                document.location.replace("/index");
+                if (!data.username) {
+                    alert("Incorrect username or password please try again")
+                }
+                else {
+                    // setting my values to storage
+                    sessionStorage.clear();
+                    sessionStorage.setItem("name", data.name);
+                    sessionStorage.setItem("coins", data.coins);
+                    sessionStorage.setItem("username", data.username);
+                    // making redirect open in same tab
+                    document.location.replace("/index");
+                }
             }
 
             )
@@ -62,14 +67,18 @@ $("#signupSubmitBtn").on("click", (event) => {
 
         }).then(response => response.json())
             .then(data => {
-                // setting my values to storage
-                sessionStorage.clear();
-                sessionStorage.setItem("name", data.name);
-                sessionStorage.setItem("coins", data.coins);
-                sessionStorage.setItem("username", data.username);
-                // making redirect open in same tab
-                window.open("/index", "_self");
-
+                if (!data.username) {
+                    alert("error signing up please try again")
+                }
+                else {
+                    // setting my values to storage
+                    sessionStorage.clear();
+                    sessionStorage.setItem("name", data.name);
+                    sessionStorage.setItem("coins", data.coins);
+                    sessionStorage.setItem("username", data.username);
+                    // making redirect open in same tab
+                    window.open("/index", "_self");
+                }
             }
 
             )
