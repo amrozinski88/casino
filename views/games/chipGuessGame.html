@@ -15,20 +15,111 @@
 <body>
 
     <div class="container">
-        <div id="chips">
-            <button id="chipOne"><img src="/styles/pictures/blackPokerChip.jpg" alt=""></button>
-            <button id="chipTwo"><img src="/styles/pictures/bluePokerChip.jpg" alt=""></button>
-            <button id="chipThree"><img src="/styles/pictures/greenPokerChip.jpg" alt=""></button>
-            <button id="chipFour"><img src="/styles/pictures/redPokerChip.jpg" alt=""></button>
+
+        <div class="jumbotron" style="background-color: purple; color: white;">
+            <div class="container">
+                <h1 class="text-center">
+                    <strong>Chip Collector</strong>
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Instructions
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <small>You will be given a random number at the start of the game. There are four chips
+                                below.
+                                By clicking on a chip you will add a specific amount of points to your total score.
+                                You win the game by matching your total score to random number, you lose the game if
+                                your total score goes above the random number. The value of each chip is hidden from
+                                you until you click on it. Each time when the game starts, the game will change the
+                                values
+                                of each chip</small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Target Score
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="target-score"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Your Score
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="your-score"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Choices of chips
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="/public/styles/pictures/bluePokerChip.jpg" id="blue">
+                        <img src="/public/styles/pictures/greenPokerChip.jpg" id="green">
+                        <img src="/public/styles/pictures/redPokerChip.jpg" id="red">
+                        <img src="/public/styles/pictures/blackPokerChip.jpg" id="black">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Win Count
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="win-count">0</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        Loss Count
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-center" id="loss-count">0</h3>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="card">
-        <div id="targetNumber"></div>
-        <div id="counter"></div>
-        <div id="wins"></div>
-        <div id="losses"></div>
-    </div>
-
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/games/chipGuessGame.js"></script>
