@@ -17,7 +17,7 @@ module.exports = function(app) {
     res.sendFile(path.resolve(__dirname,"../views/index.html"))
   });
 
-
+  
   app.get("/chipGame",function(req,res){
     res.sendFile(path.resolve(__dirname,"../views/games/chipGuessGame.html"))
   });
