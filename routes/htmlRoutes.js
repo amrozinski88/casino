@@ -33,6 +33,11 @@ module.exports = function(app) {
   app.get("/blackJackGame",function(req,res){
     res.sendFile(path.resolve(__dirname,"../views/games/blackJackGame.html"))
   });
+  
+
+  app.get("/coins",function(req,res){
+    res.sendFile(path.resolve(__dirname,"../views/coins.html"))
+  });
 };
 
 
