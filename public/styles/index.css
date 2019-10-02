@@ -2,7 +2,7 @@
 #background-home{
     background: rgba(8, 8, 8, 0.8);
     background-image: url("../styles/pictures/htmlPics/home.png");
-    background-repeat: repeat;
+    background-repeat: repeat; 
 }
 #nav-bar{
     background-color: rgb(0, 0, 0);
@@ -137,4 +137,17 @@ li,
 #cards{
     margin-bottom: 10px;
 }
-
+.social-media{
+    height: 24px;
+    width:  24px;
+}
+.social-media:hover{
+   opacity: 0.5;
+}
+ul#menu li {
+    display:inline;
+  }
+#vertical-line{
+    color: yellow;
+    margin: 0 25px;
+}
