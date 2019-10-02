@@ -26,195 +26,282 @@
     <!-- ICONS -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
 </head>
 
 <body id="background-home">
 
+    <!-- SIDE COLUMN -->
     <div class="row">
         <div class="col-2" id="home-col">
             <h1 id="spade"> &spades; </h1>
             <!-- <div class="jumbotron" id ="jumbotron"> -->
-                <h4>Welcome!</h4>
-                <h4 id="user-name">User Name Id</h4>
+            <h4>SPADES</h4>
+            <img src="/styles/pictures/htmlPics/divider.png" style="width:130px;">
+            <!-- <h4 id="user-name"> USER NAME </h4> -->
             <!-- </div> -->
             <br>
             <br>
-            <div class="jumbotron" id ="jumbotron">
-            <img id="gift" src="/styles/pictures/htmlPics/giftjpg.jpg">
-            <!-- git picture -->
-            <button type="button" class="btn btn-outline-danger" id="log-btn">Rewards</button>
-        </div>
+            <div class="jumbotron" id="jumbotron">
+                <img id="gift" src="/styles/pictures/htmlPics/giftjpg.jpg">
+                <button type="button" class="btn btn-outline-danger" id="log-btn">Rewards</button>
+            </div>
             <br>
-            <div class="jumbotron" id ="jumbotron">
-            <button id="chip-btn"><i style='font-size:16px' class='fas'>&#xf015;</i> Home</button>
+            <div class="jumbotron" id="jumbotron">
+                <button id="chip-btn"><i style='font-size:16px' class='fas'>&#xf015;</i> Home</button>
+                <br>
+                <hr class="separator-left">
+                <br>
+                <button id="banking-btn"><i style='font-size:16px' class='fas'>&#xf09d;</i> Bank </button>
+                <br>
+                <hr class="separator-left">
+                <br>
+                <button id="blog-btn"><i style='font-size:16px' class='fas'>&#xf044;</i> Blog</button>
+            </div>
             <br>
-            <hr class="separator-left">
-            <br>
-            <button id="banking-btn"><i style='font-size:16px' class='fas'>&#xf09d;</i> Bank </button>
-            <br>
-            <hr class="separator-left">
-            <br>
-            <button id="blog-btn"><i style='font-size:16px' class='fas'>&#xf044;</i> Blog</button>
-        </div>
 
-
+            <!-- <p>© 2019 UCF Coding Bootcamp<br>
+                All Rights Reserved.<br>
+                Designed by Spades</p> -->
 
         </div>
 
         <!-- BODY OF THE HOME PAGE -->
         <div class="col-10">
 
-                <nav class="navbar navbar-dark bg-black" id="nav-bar">
-                        <h3 class="bounceInLeft"></h3>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span</span>
-                            <button id="chip-btn">Chips: <span id="user-chips">0 </span><i style="font-size:20px; color:yellow"
-                                    class="fas">&#xf51e;</i></button>
-                    </nav>
-
-            <!-- CAROUSEL  -->
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" style="width: 100%; height: 350px; margin: 0 auto">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="3000">
-                        <img src="/styles/pictures/htmlPics/carousel1.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 350px" >
-                        
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>FRIDAY NIGHT!</h5>
-                          </div>
+            <nav class="navbar navbar-dark bg-black" id="nav-bar">
+                <div class="effect aeneas">
+                    <div class="buttons">
+                        <img src="/styles/pictures/htmlPics/facebook.png" class="social-media">
+                        <img src="/styles/pictures/htmlPics/instagram.png" class="social-media">
+                        <img src="/styles/pictures/htmlPics/linkedin.png" class="social-media">
+                        <img src="/styles/pictures/htmlPics/github.png" class="social-media">
+                        <img src="/styles/pictures/htmlPics/google-plus.png" class="social-media">
                     </div>
-                    <div class="carousel-item" data-interval="3000">
-                        <img src="/styles/pictures/htmlPics/carousel2.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 350px" > 
+                </div>
+                
+                <button id="chip-btn">Chips: <span id="user-chips">0 </span><i style="font-size:20px; color:yellow"
+                        class="fas">&#xf51e;</i></button>
+                        
+            </nav>
+
+            <!-- CAROUSEL BEGINS -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"
+                style="width: 100%; height: 350px; margin: 0 auto">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="5000">
+                        <img src="/styles/pictures/htmlPics/carousel1.jpg" class="d-block w-100" alt="..."
+                            style="width: 1000px; height: 400px">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>READY FOR FRIDAY NIGHT?</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="5000">
+                        <img src="/styles/pictures/htmlPics/carousel2.jpg" class="d-block w-100" alt="..."
+                            style="width: 1000px; height: 400px">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>LOOKING FOR A GREAT DINNER?</h5>
                             <p></p>
-                          </div>
+                        </div>
                     </div>
-                    <div class="carousel-item" data-interval="3000">
-                        <img src="/styles/pictures/htmlPics/carousel3.jpg" class="d-block w-100" alt="..." style="width: 1000px; height: 350px" >
+                    <div class="carousel-item" data-interval="5000">
+                        <img src="/styles/pictures/htmlPics/carousel3.jpg" class="d-block w-100" alt="..."
+                            style="width: 1000px; height: 400px">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>NOW OPEN!</h5>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
+            <br>
+            <!-- CAROUSEL END -->
+            <br>
+            <div>
+                <br>
+                <div>
+                    <h2 style="color:yellow; margin-left: 30px;">Let's Play!</h2>
+                    <img src="/styles/pictures/htmlPics/divider.png" style="width:150px; margin-left: 20px;">
+                    <br>
+                    <ul id="menu">
+                        <li><input type="radio" id="li-margin">New Games</input></li> <span id="vertical-line"> | </span>
+                        <li><input type="radio" id="li-margin">Famous</input></li> <span id="vertical-line"> | </span>
+                        <li><input type="radio" id="li-margin">Slots</input></li> <span id="vertical-line"> | </span>
+                        <li><input type="radio" id="li-margin">Poker</input></li> <span id="vertical-line"> | </span>
+                        <li><input type="radio" id="li-margin">Trade</input></li>
 
             <!-- Container for Game -->
             
             <div class="container" id="game">
-                <div class="row">
-                    <div class="col-sm" id="game1">
-                        <a href="/chipGame"><img src="/styles/pictures/htmlPics/Baccarat.png" class="games-pics"></a>
-                       
-                       <hr>
-                    </div>
-                    <div class="col-sm" id="game2">
-                            <img src="/styles/pictures/htmlPics/BlackJack.png" class="games-pics">
-                    </div>
-                    <div class="col-sm" id="game3">
-                            <img src="/styles/pictures/htmlPics/Caribbean.png" class="games-pics">
+                
+                    <img src="/styles/pictures/htmlPics/divider.png" style="width:1200px; height: 50px;">
+
+                    <div>
+                        <div class="row">
+                            <div class="col-3" id="game1">
+                                    <a href="/chipGame"><img src="/styles/pictures/htmlPics/Baccarat.png" class="games-pics"></a><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+
+                            </div>
+                            <div class="col-3" id="game2">
+                                <img src="/styles/pictures/htmlPics/BlackJack.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                            </div>
+                            <div class="col-4" id="container-right">
+                                    <!-- <img src="/styles/pictures/htmlPics/slot.png" style="height:300px; width: 300px;">
+                                    <p>Choose from 200 slot games, available anytime, anywhere in New Jersey. You can enjoy games with bonus rounds, expanding wilds, free spins and more!</p>
+                                   -->
+                            </div>
+
+                        </div>
+                        <br>
+                        <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+
+                        <div class="row">
+                            <div class="col-3" id="game4">
+                                <img src="/styles/pictures/htmlPics/Crazy4Poker.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                            </div>
+                            <div class="col-3" id="game5">
+                                <img src="/styles/pictures/htmlPics/Money-Wheel.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                            </div>
+                            <div class="col-4" id="game2">
+                                   
+                                  
+                                </div>
+    
+
+                        </div>
+                        <br>
+                        <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+
+                        <div class="row">
+                            <div class="col-3" id="game4">
+                                <img src="/styles/pictures/htmlPics/TipsFAQs.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                            </div>
+                            <div class="col-3" id="game5">
+                                <img src="/styles/pictures/htmlPics/paigow.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                            </div>
+                            <div class="col-4" id="game2">
+                                   
+                                  
+                                </div>
+    
+                        </div>
+                         <br>
+                        <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+                        <div class="row">
+                            <div class="col-3" id="game6">
+                                <img src="/styles/pictures/htmlPics/ThreeCardPoker.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                            </div>
+
+                            <div class="col-3" id="game3">
+                                <img src="/styles/pictures/htmlPics/Caribbean.png" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning"
+                                    style="width: 80px;">Practice</button> <button type="button"
+                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+
+                            </div>
+                            <div class="col-4" id="game2">            
+                                </div>
+    
+                        </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col-sm" id="game4">
-                            <img src="/styles/pictures/htmlPics/Crazy4Poker.png" class="games-pics">
-                    </div>
-                    <div class="col-sm" id="game5">
-                            <img src="/styles/pictures/htmlPics/Money-Wheel.png" class="games-pics">
-                    </div>
-                    <div class="col-sm" id="game6">
-                            <img src="/styles/pictures/htmlPics/ThreeCardPoker.png" class="games-pics">
-                    </div>
-                </div>
-
-                <div class="row">
-                        <div class="col-sm" id="game4">
-                                <img src="/styles/pictures/htmlPics/TipsFAQs.png" class="games-pics">
-                        </div>
-                        <div class="col-sm" id="game5">
-                                <img src="/styles/pictures/htmlPics/paigow.png" class="games-pics">
-                        </div>
-                        <div class="col-sm" id="game6">
-                                <img src="/styles/pictures/htmlPics/Spanish21.png" class="games-pics">
-                        </div>
-                    </div>
-
             </div>
-            
+            <br><br>
+
+
+
             <!-- Footer -->
             <div class="row">
-                    <div class="col-lg-12">
-                   <footer class="footer">
+                <div class="col-lg-12">
+                    <footer class="footer">
                         <div class="container" id="footer-content">
-                                <div class="row">
-                                    <div class="col-sm" id="content1">
-                                       <ul>
-                                           <li id="main-li">About</li>
-                                           <li>Careers</li>
-                                           <li>Help</li>
-                                           <li>FAQ</li>
-                                           <li>Affiliates</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm" id="content2">
-                                        <ul>
-                                           <li id="main-li">Games</li>
-                                           <li>Slots</li>
-                                           <li>BlackJack</li>
-                                           <li>Flip Coin</li>
-                                           <li>Hang Man</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm" id="content3">
-                                        <ul>
-                                           <li id="main-li">Security & privacy</li>
-                                           <li>Careers</li>
-                                           <li>Help</li>
-                                           <li>FAQ</li>
-                                           <li>Affiliates</li>
-                                        </ul>
-                                    </div>
+                            <div class="row">
+                                <div class="col-sm" id="content1">
+                                    <ul>
+                                        <li id="main-li">About</li>
+                                        <li>Careers</li>
+                                        <li>Help</li>
+                                        <li>FAQ</li>
+                                        <li>Affiliates</li>
+                                    </ul>
                                 </div>
-                                <br>
-                                <hr id="footer-hr">
-                                <div class="row">
-                                        <div class="col-sm" id="content1">
-                                           <ul>
-                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
-                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
-                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm" id="content2">
-                                            <ul>
-                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
-                                               <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
-                                               <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
-   
-                                            </ul>
-                                        </div>
-                                        <div class="col-sm" id="content3">
-                                            <ul>
-                                               <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
-                                               <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <hr id="footer-hr">                             
-            
-                
+                                <div class="col-sm" id="content2">
+                                    <ul>
+                                        <li id="main-li">Games</li>
+                                        <li>Slots</li>
+                                        <li>BlackJack</li>
+                                        <li>Flip Coin</li>
+                                        <li>Hang Man</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm" id="content3">
+                                    <ul>
+                                        <li id="main-li">Security & privacy</li>
+                                        <li>Careers</li>
+                                        <li>Help</li>
+                                        <li>FAQ</li>
+                                        <li>Affiliates</li>
+                                    </ul>
+                                </div>
                             </div>
-                    
-                    
-                    Copyright <b>©</b></footer>
-                    </div>
+                            <br>
+                            <hr id="footer-hr">
+                            <br>
+                            <div class="row">
+                                <div class="col-sm" id="content1">
+                                    <ul>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm" id="content2">
+                                    <ul>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-sm" id="content3">
+                                    <ul>
+                                        <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
+                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <hr id="footer-hr">
+                        </div>
+
+
+                        Copyright <b>©</b>
+                    </footer>
                 </div>
+            </div>
 
         </div>
     </div>
@@ -222,3 +309,5 @@
 </body>
 
 </html>
+
+

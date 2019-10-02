@@ -1,12 +1,19 @@
 /* HOME PAGE STYLE */
 #background-home{
-    background: rgba(8, 8, 8, 0.8);
+    background: rgba(0, 0, 0);
     background-image: url("../styles/pictures/htmlPics/home.png");
+    /* background-image: url("http://davifinearts.com/wp-content/uploads/2013/05/background-grey-4.jpg"); */
+    background-position-y: -200px;
+
     background-repeat: repeat;
+    
 }
 #nav-bar{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(17, 17, 17, 0.9);
     height: 70px;
+}
+#home-col{
+    background-color: rgb(17, 17, 17, 0.9);
 }
 #chip-btn,
 #banking-btn,
@@ -17,6 +24,13 @@
     border-style: none;
     text-align: right;
     font-size: 12px;
+}
+/* #user-chips,
+#chip-btn{
+    font-size: 18px;
+} */
+.fas{
+    margin-right: 20px;
 }
 footer {
     margin-top: 20px;
@@ -46,13 +60,6 @@ footer {
 #log-btn:focus {
     outline:0;
 }
-#carouselExampleSlidesOnly{
-
-}
-#home-col{
-    background-color: rgb(0, 0, 0);
-    color:white;
-}
 .col-2{
     text-align: center;
     padding-top: 60px;
@@ -66,7 +73,6 @@ footer {
     width: 50px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px;
 }
 #home-icon{
     background-color: yellow;
@@ -90,8 +96,11 @@ button:focus {
     font-size: 110px;
 }
 #game{
-    margin: 60px;
-    min-height: calc(100vh - 70px)                                                                
+
+    min-height: calc(100vh - 70px);                                                           
+}
+#game.container{
+    padding: 0;   
 }
 h5{
     font-size: 20px;
@@ -105,10 +114,29 @@ h5{
 #game6{
     text-align: center;
     display: inline-block;
-    height: 200px;
+    height: 300px;
     width: 100px;
-    margin-bottom: 150px;
+    padding: 0;
+    margin: 0 auto;
 }
+#btn-games{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+}
+ul#menu li {
+    display:inline;
+  }
+#li-margin{
+    margin: 0 20px 10px 20px;
+    background-color: rgb(251, 255, 0);
+    border-radius: 50%;
+}
+input{
+    color: white;
+}
+
 li,
 #content1,
 #content2,
@@ -128,13 +156,49 @@ li,
 }
 #jumbotron{
     margin: 0 20px;
-    background-color: rgba(34, 34, 34, 0.2);
+    background-color: rgba(105, 105, 105, 0.1);
 }
 .games-pics{
-    width:250px;
-    height: 250px;
+    width:200px;
+    height: 180px;
+    margin-top: 60px;
 }
-#cards{
-    margin-bottom: 10px;
+.games-pics:hover{
+    transition: all 1s ease;
+    transform: scale(1);
+    transform: scale(1.1) perspective(1px);
 }
+.social-media{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.social-media:hover{
+    opacity: 0.5;
+}
+#unique-h1{
+    font-family: 'Lobster', cursive;
+    color:
+}
+h2{
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 800;
+}
+.game-pics{
+    -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    box-shadow: 50px rgb(229, 255, 0);
+}
+.form-check-input{
+    margin-left: 200px;
+}
+#vertical-line{
+    color: yellow;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#container-right{
+    margin-right: 80px;
+    position: static;
 
+}
