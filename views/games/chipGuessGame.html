@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="public/styles/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
-
+<body style=" background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/172fdd28934711.55da3eb528c59.jpg'); font-family: 'Dosis', sans-serif; font-family: 'Karla', sans-serif;">
+    <div style="background-color: rgb(226, 226, 226, 0.3); padding: 30px; margin: 0;">
     <div class="container">
 
-        <div class="jumbotron" style="background-color: purple; color: white;">
+        <div class="jumbotron" style="background-color: rgba(214, 214, 214, 0.4); color: rgb(0, 0, 0);">
             <div class="container">
                 <h1 class="text-center">
-                    <strong>Chip Collector</strong>
+                    <strong>Chip Collector <i style='font-size:34px' class='fab'>&#xf7c6;</i></strong>
                 </h1>
             </div>
         </div>
@@ -28,20 +30,16 @@
         <div class="row">
 
             <div class="col-md-12">
-                <div class="card mb-4">
-                    <div class="card-header">
+                <div class="card mb-4" style="background-color: rgba(214, 214, 214, 0.4);">
+                    <div class="card-header" style="background-color: rgba(214, 214, 214, 0.6);">
                         Instructions
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" style="background-color: rgba(214, 214, 214, 0.4);">
                         <p>
-                            <small>You will be given a random number at the start of the game. There are four chips
-                                below.
+                            <p style="font-size: 18px;">
                                 By clicking on a chip you will add a specific amount of points to your total score.
                                 You win the game by matching your total score to random number, you lose the game if
-                                your total score goes above the random number. The value of each chip is hidden from
-                                you until you click on it. Each time when the game starts, the game will change the
-                                values
-                                of each chip</small>
+                                your total score goes above the random number. </p>
                         </p>
                     </div>
                 </div>
@@ -52,8 +50,8 @@
         <div class="row">
 
             <div class="col-md-3">
-                <div class="card mb-4">
-                    <div class="card-header">
+                <div class="card mb-4" style="background-color: rgba(214, 214, 214, 0.4);">
+                    <div class="card-header" style="background-color: rgba(214, 214, 214, 0.4);">
                         Target Score
                     </div>
                     <div class="card-body">
@@ -64,8 +62,8 @@
 
             <div class="col-md-3">
 
-                <div class="card mb-4">
-                    <div class="card-header">
+                <div class="card mb-4" style="background-color: rgba(214, 214, 214, 0.4);">
+                    <div class="card-header" style="background-color: rgba(214, 214, 214, 0.4);">
                         Your Score
                     </div>
                     <div class="card-body">
@@ -76,15 +74,15 @@
 
             <div class="col-md-6">
 
-                <div class="card mb-4">
-                    <div class="card-header">
+                <div class="card mb-4" style="background-color: rgba(214, 214, 214, 0.4);">
+                    <div class="card-header" style="background-color: rgba(214, 214, 214, 0.4);">
                         Choices of chips
                     </div>
                     <div class="card-body text-center">
-                        <img height="40px" width="40px" src="/styles/pictures/bluePokerChip.jpg" id="blue">
-                        <img height="40px" width="40px" src="/styles/pictures/greenPokerChip.jpg" id="green">
-                        <img height="40px" width="40px" src="/styles/pictures/redPokerChip.jpg" id="red">
-                        <img height="40px" width="40px" src="/styles/pictures/blackPokerChip.jpg" id="black">
+                        <img height="40px" width="40px" src="/styles/pictures/blue.png" id="blue">
+                        <img height="40px" width="40px" src="/styles/pictures/yellow.png" id="green">
+                        <img height="40px" width="40px" src="/styles/pictures/red.png" id="red">
+                        <img height="40px" width="40px" src="/styles/pictures/black.png" id="black">
                     </div>
                 </div>
 
@@ -96,8 +94,8 @@
         <div class="row">
 
             <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header">
+                <div class="card mb-4"  style="background-color: rgba(214, 214, 214, 0.4);">
+                    <div class="card-header" style="background-color: rgba(214, 214, 214, 0.4);">
                         Win Count
                     </div>
                     <div class="card-body">
@@ -108,8 +106,8 @@
 
             <div class="col-md-6">
 
-                <div class="card mb-4">
-                    <div class="card-header">
+                <div class="card mb-4" style="background-color: rgba(214, 214, 214, 0.4);">
+                    <div class="card-header" style="background-color: rgba(214, 214, 214, 0.4);">
                         Loss Count
                     </div>
                     <div class="card-body">
@@ -120,7 +118,7 @@
             </div>
         </div>
     </div>
-
+    </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/games/chipGuessGame.js"></script>
 </body>

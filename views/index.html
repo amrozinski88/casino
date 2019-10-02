@@ -28,9 +28,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         // not sure if best way to re-route but it works
-    if(!sessionStorage.name){
-        document.location.replace("/")
-    }
+        if (!sessionStorage.name) {
+            document.location.replace("/")
+        }
     </script>
 </head>
 
@@ -40,11 +40,11 @@
     <div class="row">
         <div class="col-2" id="home-col">
             <h1 id="spade"> &spades; </h1>
-            <!-- <div class="jumbotron" id ="jumbotron"> -->
             <h4>SPADES</h4>
+
             <img src="/styles/pictures/htmlPics/divider.png" style="width:130px;">
+            <h5>Welcome</h5>
             <h4 id="user-name"> USER NAME </h4>
-            <!-- </div> -->
             <br>
             <br>
             <div class="jumbotron" id="jumbotron">
@@ -62,6 +62,7 @@
                 <hr class="separator-left">
                 <br>
                 <button id="blog-btn"><i style='font-size:16px' class='fas'>&#xf044;</i> Blog</button>
+
             </div>
             <br>
             <!-- <p>© 2019 UCF Coding Bootcamp<br>
@@ -73,6 +74,7 @@
         <!-- BODY OF THE HOME PAGE -->
         <div class="col-10">
 
+            <!-- NAVBAR BEGINS -->
             <nav class="navbar navbar-dark bg-black" id="nav-bar">
                 <div class="effect aeneas">
                     <div class="buttons">
@@ -83,10 +85,12 @@
                         <img src="/styles/pictures/htmlPics/google-plus.png" class="social-media">
                     </div>
                 </div>
-                <button id="chip-btn">Chips: <span id="user-chips">0 </span><i style="font-size:20px; color:yellow"
-                        class="fas">&#xf51e;</i></button>  
-
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <button id="chip-btn">Chips: <span id="user-chips">0 </span><i
+                        style="font-size:20px; color:rgb(236, 193, 0);" class="fas">&#xf51e;</i></button><span>|</span>
+                <button sty;e="z-index:15;" class="btn btn-outline-warning logoutBtn" id="logoutBtn">Logout</button>
             </nav>
+            <!-- NAVBAR ENDS -->
 
             <!-- CAROUSEL BEGINS -->
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"
@@ -124,193 +128,199 @@
             <div>
                 <br>
                 <div>
-                    <h2 style="color:yellow; margin-left: 30px;">Let's Play!</h2>
+                    <h2 style="color:rgb(236, 193, 0); margin-left: 30px;">Let's Play!</h2>
                     <img src="/styles/pictures/htmlPics/divider.png" style="width:150px; margin-left: 10px;">
                     <br>
                     <ul id="menu">
-                        <li><input type="radio" id="li-margin"> New Games</input></li> <span id="vertical-line"> | </span>
+                        <li><input type="radio" id="li-margin"> New Games</input></li> <span id="vertical-line"> |
+                        </span>
                         <li><input type="radio" id="li-margin"> Famous</input></li> <span id="vertical-line"> | </span>
                         <li><input type="radio" id="li-margin"> Slots</input></li> <span id="vertical-line"> | </span>
                         <li><input type="radio" id="li-margin"> Poker</input></li> <span id="vertical-line"> | </span>
                         <li><input type="radio" id="li-margin"> Trade</input></li>
                     </ul>
-            <!-- Container for Game -->
-            
-            <div class="container" id="game">
-                
-                    <img src="/styles/pictures/htmlPics/divider.png" style="width:1200px; height: 50px;">
+                    <!-- Container for Game -->
 
-                    <div>
-                        <div class="row">
-                            <div class="col-4" id="game1">
-                                    <a href="/chipGame"><img src="/styles/pictures/htmlPics/Baccarat.png" class="games-pics"></a><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
+                    <!-- GAMES CONTAINER -->
+                    <div class="container" id="game">
 
-                            </div>
-                            <div class="col-4" id="game2">
-                                    <a href="/wordGame"><img src="/styles/pictures/htmlPics/BlackJack.png" class="games-pics"></a><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-                            </div>
-                            <div class="col-1" id="container-right">
-                                    <!-- <img src="/styles/pictures/htmlPics/slot.png" style="height:300px; width: 300px;">
-                                    <p>Choose from 200 slot games, available anytime, anywhere in New Jersey. You can enjoy games with bonus rounds, expanding wilds, free spins and more!</p>
-                                   -->
-                            </div>
+                        <img src="/styles/pictures/htmlPics/divider.png"
+                            style="width:1400px; height: 50px; margin-left: -120px;">
 
-                        </div>
-                        <br>
-                        <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+                        <div>
+                            <div class="row" sty;e="width:900px;">
+                                <div class="col-4" id="game1">
+                                    <a href="/chipGame"><img src="/styles/pictures/htmlPics/Baccarat.png"
+                                            class="games-pics"></a><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px;">Bet</button>
 
-                        <div class="row">
-                            <div class="col-4" id="game4">
-                                <img src="/styles/pictures/htmlPics/Crazy4Poker.png" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-                            </div>
-                            <div class="col-4" id="game5">
-                                <img src="/styles/pictures/htmlPics/Money-Wheel.png" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-                            </div>
-                            <div class="col-1" id="game2">
-                                   
-                                  
                                 </div>
-    
-
-                        </div>
-                        <br>
-                        <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
-
-                        <div class="row">
-                            <div class="col-4" id="game4">
-                                <img src="/styles/pictures/htmlPics/TipsFAQs.png" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-                            </div>
-                            <div class="col-4" id="game5">
-                                <img src="/styles/pictures/htmlPics/paigow.png" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-                            </div>
-                            <div class="col-1" id="game2">
-                                   
-                                  
+                                <div class="col-4" id="game2">
+                                    <a href="/wordGame"><img src="/styles/pictures/htmlPics/BlackJack.png"
+                                            class="games-pics"></a><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
                                 </div>
-    
-                        </div>
-                         <br>
-                        <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
-                        <div class="row">
-                            <div class="col-4" id="game6">
-                                <img src="/styles/pictures/htmlPics/ThreeCardPoker.png" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-                            </div>
-
-                            <div class="col-4" id="game3">
-                                <img src="/styles/pictures/htmlPics/Caribbean.png" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;">Practice</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;">Bet</button>
-
-                            </div>
-                            <div class="col-1" id="game2">            
+                                <div class="col-1" id="container-right">
+                                    <div id="sticky-div">
+                                        <img src="/styles/pictures/htmlPics/stickyDiv.jpg"
+                                            style="height:400px; width:400px;" id="sticky-div">
+                                    </div>
                                 </div>
-    
+
+                            </div>
+                            <br>
+                            <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+
+                            <div class="row">
+                                <div class="col-4" id="game4">
+                                    <a href="/slotsGame"><img src="/styles/pictures/htmlPics/Crazy4Poker.png"
+                                            class="games-pics"></a><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
+                                </div>
+                                <div class="col-4" id="game5">
+                                    <a href="/blackJackGame"><img src="/styles/pictures/htmlPics/Money-Wheel.png"
+                                            class="games-pics"></a><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
+                                </div>
+                                <div class="col-1" id="game2">
+
+
+                                </div>
+
+
+                            </div>
+                            <br>
+                            <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+
+                            <div class="row" class="games-pics">
+                                <div class="col-4" id="game4">
+                                    <img src="/styles/pictures/htmlPics/TipsFAQs.png" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
+                                </div>
+                                <div class="col-4" id="game5">
+                                    <img src="/styles/pictures/htmlPics/paigow.png" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
+                                </div>
+                                <div class="col-1">
+
+
+                                </div>
+
+                            </div>
+                            <br>
+                            <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+                            <div class="row">
+                                <div class="col-4" id="game6">
+                                    <img src="/styles/pictures/htmlPics/ThreeCardPoker.png" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
+                                </div>
+
+                                <div class="col-4" id="game3">
+                                    <img src="/styles/pictures/htmlPics/Caribbean.png" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning"
+                                        style="width: 80px;  border-radius: 30px">Play</button> <button type="button"
+                                        class="btn btn-outline-warning" style="width: 80px;  border-radius: 30px">Bet</button>
+
+                                </div>
+                                <div class="col-1" id="game2">
+                                </div>
+                                <img src="/styles/pictures/htmlPics/divider.png" style="width:720px; height: 50px;">
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br><br>
+                <br><br>
 
 
-            <!-- Footer -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <footer class="footer">
-                        <div class="container" id="footer-content">
-                            <div class="row">
-                                <div class="col-sm" id="content1">
-                                    <ul>
-                                        <li id="main-li">About</li>
-                                        <li>Careers</li>
-                                        <li>Help</li>
-                                        <li>FAQ</li>
-                                        <li>Affiliates</li>
-                                    </ul>
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <footer class="footer">
+                            <div class="container" id="footer-content">
+                                <div class="row">
+                                    <div class="col-sm" id="content1">
+                                        <ul>
+                                            <li id="main-li">About</li>
+                                            <li>Careers</li>
+                                            <li>Help</li>
+                                            <li>FAQ</li>
+                                            <li>Affiliates</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm" id="content2">
+                                        <ul>
+                                            <li id="main-li">Games</li>
+                                            <li>Slots</li>
+                                            <li>BlackJack</li>
+                                            <li>Flip Coin</li>
+                                            <li>Hang Man</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm" id="content3">
+                                        <ul>
+                                            <li id="main-li">Security & privacy</li>
+                                            <li>Careers</li>
+                                            <li>Help</li>
+                                            <li>FAQ</li>
+                                            <li>Affiliates</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-sm" id="content2">
-                                    <ul>
-                                        <li id="main-li">Games</li>
-                                        <li>Slots</li>
-                                        <li>BlackJack</li>
-                                        <li>Flip Coin</li>
-                                        <li>Hang Man</li>
-                                    </ul>
+                                <br>
+                                <hr id="footer-hr">
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm" id="content1">
+                                        <ul>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm" id="content2">
+                                        <ul>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm" id="content3">
+                                        <ul>
+                                            <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
+                                            <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="col-sm" id="content3">
-                                    <ul>
-                                        <li id="main-li">Security & privacy</li>
-                                        <li>Careers</li>
-                                        <li>Help</li>
-                                        <li>FAQ</li>
-                                        <li>Affiliates</li>
-                                    </ul>
-                                </div>
+                                <br>
+                                <br>
+                                <hr id="footer-hr">
                             </div>
-                            <br>
-                            <hr id="footer-hr">
-                            <br>
-                            <div class="row">
-                                <div class="col-sm" id="content1">
-                                    <ul>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm" id="content2">
-                                    <ul>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
-
-                                    </ul>
-                                </div>
-                                <div class="col-sm" id="content3">
-                                    <ul>
-                                        <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br>
-                            <br>
-                            <hr id="footer-hr">
-                        </div>
 
 
-                        Copyright <b>©</b>
-                    </footer>
+                            Copyright <b>©</b>
+                        </footer>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-<script src="/js/index.js"></script>
+        <script src="/js/index.js"></script>
 </body>
 
 </html>
-
-
-
