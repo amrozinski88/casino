@@ -1,0 +1,187 @@
+/* COINS PAGE STYLE */
+#background-home{
+    background: rgba(0, 0, 0);
+    background-image: url("../styles/pictures/htmlPics/home.png");
+    /* background-image: url("http://davifinearts.com/wp-content/uploads/2013/05/background-grey-4.jpg"); */
+    background-position-y: -200px;
+    background-repeat: repeat;
+}
+#nav-bar{
+    background-color: rgb(17, 17, 17, 0.9);
+    height: 70px;
+}
+#home-col{
+    background-color: rgb(17, 17, 17, 0.9);
+}
+#chip-btn,
+#banking-btn,
+#blog-btn{
+    margin-top: 10px;
+    background-color: transparent;
+    color:  rgb(226, 219, 0);
+    border-style: none;
+    text-align: right;
+    font-size: 12px;
+}
+.fas{
+    margin-right: 20px;
+}
+footer {
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    background: rgba(8, 8, 8, 0.8);
+    padding: 20px;
+    float: none;
+    position: static;
+}
+.fas{
+    margin-left: 10px;
+}
+#separator{
+    margin: 0 20px;
+    color:  rgb(160, 42, 42);
+}
+#log-btn{
+    width: 90px;
+    height: 35px;
+    color:  rgb(226, 219, 0);
+    border-color: rgb(226, 219, 0);
+    margin: 10px 0 20px 0;
+    background-color: transparent;
+    outline:0;
+}
+#log-btn:focus {
+    outline:0;
+}
+.col-2{
+    text-align: center;
+    padding-top: 60px;
+}
+.separator-left{
+    width:80%;
+    background-color:grey;
+}
+#gift{
+    height:50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+#home-icon{
+    background-color: yellow;
+}
+.col-10{
+    padding: 0 0;
+}
+h4{
+    color:  rgb(226, 219, 0);
+}
+.carousel-caption{
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: -30px;
+}
+button:focus {
+    outline:0;
+}
+#spade{
+    color: yellow;
+    font-size: 110px;
+}
+#game{
+
+    min-height: calc(100vh - 70px);                                                           
+}
+#game.container{
+    padding: 0;   
+}
+h5{
+    font-size: 20px;
+}
+#rewards{
+    text-align: center;
+    display: inline-block;
+    height: 300px;
+    width: 100px;
+    padding: 0;
+    margin: 0 auto;
+}
+#btn-games{
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+}
+ul#menu li {
+    display:inline;
+  }
+#li-margin{
+    margin: 0 20px 10px 20px;
+    background-color: rgb(251, 255, 0);
+    border-radius: 50%;
+}
+input{
+    color: white;
+}
+
+li,
+#content1,
+#content2,
+#content3{
+    text-align: left;
+    color: rgb(84, 84, 84);
+    font-size: 18px;
+    list-style-type: none;
+}
+#main-li{
+    color:white;
+    margin: 20px 0 10px 0;
+}
+#footer-hr{
+    margin: 30px 0;
+    background-color: rgb(94, 94, 94);
+}
+#jumbotron{
+    margin: 0 20px;
+    background-color: rgba(105, 105, 105, 0.1);
+}
+.games-pics{
+    width:200px;
+    height: 180px;
+    margin-top: 60px;
+}
+
+.social-media{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+.social-media:hover{
+    opacity: 0.5;
+}
+#unique-h1{
+    font-family: 'Lobster', cursive;
+    color:
+}
+h2{
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 800;
+}
+.game-pics{
+    -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    box-shadow: 50px rgb(229, 255, 0);
+}
+.form-check-input{
+    margin-left: 200px;
+}
+#vertical-line{
+    color: yellow;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#container-right{
+    margin-right: 80px;
+    position: static;
+}
