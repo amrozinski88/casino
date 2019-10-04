@@ -18,7 +18,7 @@
 #blog-btn{
     margin-top: 10px;
     background-color: transparent;
-    color:  rgb(226, 219, 0);
+    color:  rgb(236, 193, 0);
     border-style: none;
     text-align: right;
     font-size: 12px;
@@ -45,8 +45,8 @@ footer {
 #log-btn{
     width: 90px;
     height: 35px;
-    color:  rgb(226, 219, 0);
-    border-color: rgb(226, 219, 0);
+    color:  rgb(236, 193, 0);
+    border-color: rgb(236, 193, 0);
     margin: 10px 0 20px 0;
     background-color: transparent;
     outline:0;
@@ -69,13 +69,13 @@ footer {
     margin: 0 auto;
 }
 #home-icon{
-    background-color: yellow;
+    background-color: rgb(236, 193, 0);
 }
 .col-10{
     padding: 0 0;
 }
 h4{
-    color:  rgb(226, 219, 0);
+    color:  rgb(236, 193, 0);
 }
 .carousel-caption{
     margin: 0 auto;
@@ -86,7 +86,7 @@ button:focus {
     outline:0;
 }
 #spade{
-    color: yellow;
+    color: rgb(236, 193, 0);
     font-size: 110px;
 }
 #game{
@@ -118,7 +118,7 @@ ul#menu li {
   }
 #li-margin{
     margin: 0 20px 10px 20px;
-    background-color: rgb(251, 255, 0);
+    background-color:rgb(236, 193, 0);
     border-radius: 50%;
 }
 input{
@@ -168,20 +168,51 @@ h2{
     font-family: 'Pattaya', sans-serif;
     font-weight: 800;
 }
-.game-pics{
-    -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
-    -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
-    box-shadow: 50px rgb(229, 255, 0);
+.games-pics{
+    ebkit-box-shadow: 10px 0px 50px -3px rgba(255,204,0,0.54);
+    -moz-box-shadow: 10px 0px 50px -3px rgba(255,204,0,0.54);
+    box-shadow: 10px 0px 50px -3px rgba(255,204,0,0.54);
 }
 .form-check-input{
     margin-left: 200px;
 }
 #vertical-line{
-    color: yellow;
+    color: rgb(236, 193, 0);
     margin-left: 10px;
     margin-right: 10px;
 }
 #container-right{
     margin-right: 80px;
     position: static;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -6px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: none;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -6px;
+    left: -1px;
+    position: relative;
+    background-color: #ffd900;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: none;
+}
+input[type='radio']:hover{
+    background-color: #5b5b5b;
 }

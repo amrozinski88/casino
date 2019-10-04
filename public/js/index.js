@@ -14,7 +14,30 @@ $("#user-chips").text(coins)
 $("#logoutBtn").on("click",()=>{
   sessionStorage.clear()
   document.location.replace("/")
-})
+});
+
+// home button 
+$("#chip-btn").on("click",()=>{
+  document.location.replace("/index")
+});
+
+$("#chip-btn1").on("click",()=>{
+  document.location.replace("/index")
+});
+
+// Rewards re direct button
+$("#log-btn").on("click",()=>{
+  document.location.replace("/coins")
+});
+
+// Rewards re direct button
+$("#user-chips").on("click",()=>{
+  document.location.replace("/coins")
+});
+
+
+
+
 
 // The API object contains methods for each kind of request we'll make
 var API = {
