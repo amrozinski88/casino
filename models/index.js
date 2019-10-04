@@ -14,8 +14,7 @@ if (config.use_env_variable) {
   var sequelize = new Sequelize(
     config.database,
     config.username,
-    // config.password,
-    process.env.SEQUEL_PW,
+    config.password,
     config
   );
 }

@@ -6,7 +6,7 @@ $("#loginSubmitBtn").on("click", (event) => {
         alert("Please enter a valid username and password")
     }
     else {
-        fetch("http://localhost:3000/api/login", {
+        fetch("/api/login", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
@@ -54,7 +54,7 @@ $("#signupSubmitBtn").on("click", (event) => {
         alert(`Passwords do not match`)
     }
     else {
-        fetch("http://localhost:3000/api/signup", {
+        fetch("/api/signup", {
             method: "post",
             headers: {
                 "Content-Type": "application/json",
