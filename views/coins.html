@@ -26,7 +26,11 @@
     <!-- ICONS -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script>
+        if (!sessionStorage.name) {
+            document.location.replace("/")
+        } 
+    </script>
 </head>
 
 <body id="background-home">
@@ -80,8 +84,8 @@
 
                     </div>
                 </div>
-                <button id="chip-btn">Chips: <span id="user-chips">0 </span><i style="font-size:20px; color:rgb(236, 193, 0);"
-                        class="fas">&#xf51e;</i></button>
+                <button id="chip-btn">Chips: <span id="user-chips">0 </span><i
+                        style="font-size:20px; color:rgb(236, 193, 0);" class="fas">&#xf51e;</i></button>
             </nav>
 
             <!-- CAROUSEL BEGINS -->
@@ -139,176 +143,193 @@
                         <div class="row">
                             <div class="col-2" id="rewards">
                                 <img src="/styles/pictures/htmlPics/rewards/arena.jpg" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                                <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                    type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
 
                             </div>
                             <div class="col-2" id="rewards">
                                 <img src="/styles/pictures/htmlPics/rewards/cruise.jpg" class="games-pics"><br><br>
-                                <button type="button" class="btn btn-outline-warning"
-                                    style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                    class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                                <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                    type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
                             </div>
                             <div class="col-2" id="rewards">
-                                    <img src="/styles/pictures/htmlPics/rewards/dinner.jpg" class="games-pics"><br><br>
-                                    <button type="button" class="btn btn-outline-warning"
-                                        style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                        class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                </div>
-                                <div class="col-2" id="rewards">
-                                        <img src="/styles/pictures/htmlPics/rewards/headset.jpg" class="games-pics"><br><br>
-                                        <button type="button" class="btn btn-outline-warning"
-                                            style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                            class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                    </div>
+                                <img src="/styles/pictures/htmlPics/rewards/dinner.jpg" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                    type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                            </div>
+                            <div class="col-2" id="rewards">
+                                <img src="/styles/pictures/htmlPics/rewards/headset.jpg" class="games-pics"><br><br>
+                                <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                    type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                        style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                            </div>
                         </div>
                         <br>
-                          <img src="/styles/pictures/htmlPics/divider.png" style="width:1200px; height: 50px;">
+                        <img src="/styles/pictures/htmlPics/divider.png" style="width:1200px; height: 50px;">
 
                         <!-- here -->
                         <div>
-                                <div class="row">
-                                    <div class="col-2" id="rewards">
-                                        <img src="/styles/pictures/htmlPics/rewards/iPhone.jpg" class="games-pics"><br><br>
-                                        <button type="button" class="btn btn-outline-warning"
-                                            style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                            class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-        
-                                    </div>
-                                    <div class="col-2" id="rewards">
-                                        <img src="/styles/pictures/htmlPics/rewards/jewelry.jpg" class="games-pics"><br><br>
-                                        <button type="button" class="btn btn-outline-warning"
-                                            style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                            class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                    </div>
-                                    <div class="col-2" id="rewards">
-                                            <img src="/styles/pictures/htmlPics/rewards/laptop.jpg" class="games-pics"><br><br>
-                                            <button type="button" class="btn btn-outline-warning"
-                                                style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                                class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                        </div>
-                                        <div class="col-2" id="rewards">
-                                                <img src="/styles/pictures/htmlPics/rewards/lasVegas.jpg" class="games-pics"><br><br>
-                                                <button type="button" class="btn btn-outline-warning"
-                                                    style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                                    class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                            </div>
-                                </div>
-                        <br>
-                          <img src="/styles/pictures/htmlPics/divider.png" style="width:1200px; height: 50px;">
-
-
-                        <div>
-                                <div class="row">
-                                    <div class="col-2" id="rewards">
-                                        <img src="/styles/pictures/htmlPics/rewards/moto.jpg" class="games-pics"><br><br>
-                                        <button type="button" class="btn btn-outline-warning"
-                                            style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                            class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-        
-                                    </div>
-                                    <div class="col-2" id="rewards">
-                                        <img src="/styles/pictures/htmlPics/rewards/puntaCana.jpg" class="games-pics"><br><br>
-                                        <button type="button" class="btn btn-outline-warning"
-                                            style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                            class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                    </div>
-                                    <div class="col-2" id="rewards">
-                                            <img src="/styles/pictures/htmlPics/rewards/rockConcert.jpg" class="games-pics"><br><br>
-                                            <button type="button" class="btn btn-outline-warning"
-                                                style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                                class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                        </div>
-                                        <div class="col-2" id="rewards">
-                                                <img src="/styles/pictures/htmlPics/rewards/yacht.jpg" class="games-pics"><br><br>
-                                                <button type="button" class="btn btn-outline-warning"
-                                                    style="width: 80px;"><i style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button type="button"
-                                                    class="btn btn-outline-warning" style="width: 80px;"><i style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
-                                            </div>
-                                </div>
-
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-
-
-            <!-- Footer -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <footer class="footer">
-                        <div class="container" id="footer-content">
                             <div class="row">
-                                <div class="col-sm" id="content1">
-                                    <ul>
-                                        <li id="main-li">About</li>
-                                        <li>Careers</li>
-                                        <li>Help</li>
-                                        <li>FAQ</li>
-                                        <li>Affiliates</li>
-                                    </ul>
+                                <div class="col-2" id="rewards">
+                                    <img src="/styles/pictures/htmlPics/rewards/iPhone.jpg" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                        type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+
                                 </div>
-                                <div class="col-sm" id="content2">
-                                    <ul>
-                                        <li id="main-li">Games</li>
-                                        <li>Slots</li>
-                                        <li>BlackJack</li>
-                                        <li>Flip Coin</li>
-                                        <li>Hang Man</li>
-                                    </ul>
+                                <div class="col-2" id="rewards">
+                                    <img src="/styles/pictures/htmlPics/rewards/jewelry.jpg" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                        type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
                                 </div>
-                                <div class="col-sm" id="content3">
-                                    <ul>
-                                        <li id="main-li">Security & privacy</li>
-                                        <li>Careers</li>
-                                        <li>Help</li>
-                                        <li>FAQ</li>
-                                        <li>Affiliates</li>
-                                    </ul>
+                                <div class="col-2" id="rewards">
+                                    <img src="/styles/pictures/htmlPics/rewards/laptop.jpg" class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                        type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                                </div>
+                                <div class="col-2" id="rewards">
+                                    <img src="/styles/pictures/htmlPics/rewards/lasVegas.jpg"
+                                        class="games-pics"><br><br>
+                                    <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                        type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                            style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
                                 </div>
                             </div>
                             <br>
-                            <hr id="footer-hr">
-                            <br>
-                            <div class="row">
-                                <div class="col-sm" id="content1">
-                                    <ul>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm" id="content2">
-                                    <ul>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
+                            <img src="/styles/pictures/htmlPics/divider.png" style="width:1200px; height: 50px;">
 
-                                    </ul>
+
+                            <div>
+                                <div class="row">
+                                    <div class="col-2" id="rewards">
+                                        <img src="/styles/pictures/htmlPics/rewards/moto.jpg"
+                                            class="games-pics"><br><br>
+                                        <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                            type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+
+                                    </div>
+                                    <div class="col-2" id="rewards">
+                                        <img src="/styles/pictures/htmlPics/rewards/puntaCana.jpg"
+                                            class="games-pics"><br><br>
+                                        <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                            type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                                    </div>
+                                    <div class="col-2" id="rewards">
+                                        <img src="/styles/pictures/htmlPics/rewards/rockConcert.jpg"
+                                            class="games-pics"><br><br>
+                                        <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                            type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                                    </div>
+                                    <div class="col-2" id="rewards">
+                                        <img src="/styles/pictures/htmlPics/rewards/yacht.jpg"
+                                            class="games-pics"><br><br>
+                                        <button type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:18px" class="fa">&#xf07a;</i> Cart</button> <button
+                                            type="button" class="btn btn-outline-warning" style="width: 80px;"><i
+                                                style="font-size:12px" class="fa">&#xf004;</i> Claim</button>
+                                    </div>
                                 </div>
-                                <div class="col-sm" id="content3">
-                                    <ul>
-                                        <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
-                                        <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
-                                    </ul>
-                                </div>
+
                             </div>
-                            <br>
-                            <br>
-                            <hr id="footer-hr">
                         </div>
+                    </div>
+                    <br><br>
 
 
-                        Copyright <b>©</b>
-                    </footer>
+
+                    <!-- Footer -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <footer class="footer">
+                                <div class="container" id="footer-content">
+                                    <div class="row">
+                                        <div class="col-sm" id="content1">
+                                            <ul>
+                                                <li id="main-li">About</li>
+                                                <li>Careers</li>
+                                                <li>Help</li>
+                                                <li>FAQ</li>
+                                                <li>Affiliates</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm" id="content2">
+                                            <ul>
+                                                <li id="main-li">Games</li>
+                                                <li>Slots</li>
+                                                <li>BlackJack</li>
+                                                <li>Flip Coin</li>
+                                                <li>Hang Man</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm" id="content3">
+                                            <ul>
+                                                <li id="main-li">Security & privacy</li>
+                                                <li>Careers</li>
+                                                <li>Help</li>
+                                                <li>FAQ</li>
+                                                <li>Affiliates</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr id="footer-hr">
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm" id="content1">
+                                            <ul>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f3;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf24c;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f2;</i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm" id="content2">
+                                            <ul>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf24b;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f1;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f4;</i></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm" id="content3">
+                                            <ul>
+                                                <li id="cards"> <i style="font-size:50px" class="fa">&#xf1f0;</i></li>
+                                                <li id="cards"><i style="font-size:50px" class="fa">&#xf1f5;</i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <hr id="footer-hr">
+                                </div>
+
+
+                                Copyright <b>©</b>
+                            </footer>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-        </div>
-    </div>
-    <script type="text/javascript" src="/js/coins.js"></script>
+            <script type="text/javascript" src="/js/coins.js"></script>
 </body>
 
 </html>

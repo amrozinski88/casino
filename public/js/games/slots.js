@@ -1,6 +1,4 @@
-
 // welcome to slots message
-console.log(`i worked`)
 // 3 slot screen items
 let slotOne = 0;
 let slotTwo = 0;

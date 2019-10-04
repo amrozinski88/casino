@@ -1,4 +1,3 @@
-
 var wordsList = ['vegas', 'casino', 'lucky', 'slots', 'chips', 'cards', 'desert', 'bust', 'winner'];
 
 // Solution will be held here.
